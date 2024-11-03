@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Appbar() {
   return (
-    <div className="w-full p-3 md:p-6 overflow-hidden">
-      <div className="flex justify-between items-center flex-1">
+    <div className="w-full pr-1 pt-3 md:p-6 overflow-hidden">
+      <div className="flex justify-between gap-4 items-center flex-1">
         <div className="max-w-6xl flex flex-col items-baseline xxs:flex-row flex-shrink xxs:items-center">
           <div>
             <svg
@@ -12,7 +12,7 @@ export default function Appbar() {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="size-6">
+              className="size-6 ml-2">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -26,7 +26,7 @@ export default function Appbar() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col xxs:flex-row items-center justify-center gap-3 text-white font-semibold relative text-lg flex-1">
+        <div className="flex flex-col xxs:flex-row items-center mr-4 justify-center xxs:gap-3 text-white font-semibold relative text-lg flex-1">
           <div>
             <button>Home</button>
           </div>

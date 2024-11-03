@@ -75,7 +75,7 @@ export default function Faq() {
   };
 
   return (
-    <div>
+    <div className="ml-5">
       {faqItems.map((item, index) => (
         <div key={index}>
           <div className="mr-10 flex-col mt-2 pb-4">

@@ -6,9 +6,4 @@ const  nextConfig = {
     }
 };
 
-// module.exports = {
-//   reactStrictMode: true,
-//   nextConfig
-//   // Other configurations...
-// };
  export default nextConfig;

@@ -15,7 +15,7 @@ import { Clock, Mail, MapPin, Phone } from "lucide-react";
 
 export default function Section8() {
   return (
-    <div className="w-full min-h-screen bg-[#E4E5DF] p-4 md:p-8 lg:p-12">
+    <div className="w-full h-[80%] bg-[#E4E5DF] p-4 md:p-8 lg:p-12">
       <div className="max-w-6xl mx-auto grid gap-8 lg:grid-cols-2">
         <Card className="p-6 space-y-6">
           <form className="space-y-4">

@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function Window() {
   return (
-    <div className="relative flex  justify-center flex-1">
-      <div className="relative w-[75vw] h-[26vw] rounded-[20px]">
+    <div className="relative flex h-full mb-20 flex-1">
+      <div className="w-[50vw] h-[50vw] md:size-60 lg:w-screen lg:h-full">
         <Image
           src="/images/bg.jpg" 
           alt="Description of the image" 
           layout="fill"
           objectFit=""
-          className="rounded-[20px] object-cover sm:object-contain"
+          className="rounded-[10px] pb-19 object-cover"
           draggable={false} 
         />
       </div>

@@ -34,11 +34,6 @@ export default function Home() {
       <div className="w-full">
         <Section9 />
       </div>
-      <div className="bg-blue-600 p-4">
-        <div className="bg-red-600 ">1</div>
-        <div className="bg-green-600">2</div>
-        <div className="bg-yellow-600">3</div>
-      </div>
     </div>
   );
 }

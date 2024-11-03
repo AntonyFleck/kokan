@@ -8,7 +8,7 @@ export default function Section9() {
     <div>
       <footer className="bg-green-800 text-white">
         <div className="container mx-auto px-4 py-8 md:py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="space-y-6">
               <div className="flex items-center space-x-2">
                 <svg
@@ -18,7 +18,9 @@ export default function Section9() {
                   aria-hidden="true">
                   <path d="M12 2L1 12h3v9h6v-6h4v6h6v-9h3L12 2z" />
                 </svg>
-                <span className="text-xl font-bold">EcoHaven Realty</span>
+                <span className="text-xl  border-b-2 inline-block font-bold">
+                  EcoHaven Realty
+                </span>
               </div>
 
               <div className="flex space-x-4">
@@ -55,7 +57,9 @@ export default function Section9() {
               </Button>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Navigation</h3>
+              <h3 className="text-lg border-b-2 inline-block font-semibold mb-4">
+                Navigation
+              </h3>
               <ul className="space-y-3">
                 <li>
                   <Link
@@ -95,7 +99,9 @@ export default function Section9() {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Company</h3>
+              <h3 className="text-lg  border-b-2 inline-block font-semibold mb-4">
+                Company
+              </h3>
               <ul className="space-y-3">
                 <li>
                   <Link
@@ -121,7 +127,9 @@ export default function Section9() {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Support</h3>
+              <h3 className="text-lg  border-b-2 inline-block font-semibold mb-4">
+                Support
+              </h3>
               <ul className="space-y-3">
                 <li>
                   <Link

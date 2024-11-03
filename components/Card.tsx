@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card() {
   return (
-    <div className="relative flex flex-col text-black space-y-2 px-6">
+    <div className="flex flex-col text-black p-5">
       <div className="border-l-4 border-[#27563A] p-2">
         <p className="text-[#27563A] font-semibold">WHO WE ARE</p>
       </div>
