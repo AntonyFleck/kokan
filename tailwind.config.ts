@@ -55,7 +55,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        jakarta: ['Plus Jakarta Sans"', "sans-serif"],
+        jakarta: ["Plus Jakarta Sans", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
