@@ -6,6 +6,7 @@ import Faq from './Faq'
 export default function Faqright() {
     const[open,setOpen]=useState(false)
   return (
-  <Faq/>
+  <Faq key={1}/>
   )
 }
+

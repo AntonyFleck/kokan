@@ -37,20 +37,27 @@ const testimonials: Testimonial[] = [
     id: 4,
     name: "Susan Lanre",
     rating: 4.5,
-    quote:
-      "I recently sold my home with.",
+    quote: "I recently sold my home with.",
   },
 ];
+
+type ExtendedTestimonial = Testimonial & { uniqueKey: string };
 
 export default function InfiniteScrollingTestimonials() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
-  const [items, setItems] = useState<Testimonial[]>([]);
+  const [items, setItems] = useState<ExtendedTestimonial[]>([]);
 
-  useEffect(() => {
-    // Initialize with 3 sets of testimonials for smooth scrolling
-    setItems([...testimonials, ...testimonials, ...testimonials]);
-  }, []);
+useEffect(() => {
+  // Initialize with 3 sets of testimonials for smooth scrolling
+  const repeatedTestimonials = Array.from({ length: 3 }, (_, index) =>
+    testimonials.map((testimonial) => ({
+      ...testimonial,
+      uniqueKey: `${testimonial.id}-${index}`, // Create a unique key for rendering
+    }))
+  ).flat();
+  setItems(repeatedTestimonials);
+}, []);
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;
@@ -86,35 +93,35 @@ export default function InfiniteScrollingTestimonials() {
     }
   };
 
-  const renderTestimonial = (testimonial: Testimonial) => (
-    <Card
-      key={testimonial.id}
-      className="flex-shrink-0 w-[300px] mx-4 my-2 bg-white shadow-lg">
-      <CardContent className="p-6 flex flex-col h-[300px]">
-        <div className="flex justify-center mb-4">
-          {[...Array(5)].map((_, i) => (
-            <Star
-              key={i}
-              className={`w-5 h-5 ${
-                i < Math.floor(testimonial.rating)
-                  ? "text-yellow-400 fill-yellow-400"
-                  : "text-gray-300"
-              }`}
-            />
-          ))}
-          <span className="ml-2 text-sm text-gray-600">
-            {testimonial.rating.toFixed(1)}
-          </span>
-        </div>
-        <div className="flex-grow overflow-y-auto mb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
-          <blockquote className="text-center text-gray-700">
-            "{testimonial.quote}"
-          </blockquote>
-        </div>
-        <p className="text-center font-semibold mt-auto">{testimonial.name}</p>
-      </CardContent>
-    </Card>
-  );
+ const renderTestimonial = (testimonial: ExtendedTestimonial) => (
+   <Card
+     key={testimonial.uniqueKey} // Use uniqueKey instead of id
+     className="flex-shrink-0 w-[300px] mx-4 my-2 bg-white shadow-lg">
+     <CardContent className="p-6 flex flex-col h-[300px]">
+       <div className="flex justify-center mb-4">
+         {[...Array(5)].map((_, i) => (
+           <Star
+             key={i}
+             className={`w-5 h-5 ${
+               i < Math.floor(testimonial.rating)
+                 ? "text-yellow-400 fill-yellow-400"
+                 : "text-gray-300"
+             }`}
+           />
+         ))}
+         <span className="ml-2 text-sm text-gray-600">
+           {testimonial.rating.toFixed(1)}
+         </span>
+       </div>
+       <div className="flex-grow overflow-y-auto mb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+         <blockquote className="text-center text-gray-700">
+           "{testimonial.quote}"
+         </blockquote>
+       </div>
+       <p className="text-center font-semibold mt-auto">{testimonial.name}</p>
+     </CardContent>
+   </Card>
+ );
 
   return (
     <div className="py-12 px-4 md:px-6 lg:px-8 bg-white">
