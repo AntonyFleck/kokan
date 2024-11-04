@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Konkannagar() {
   return (
-    <div className="h-full w-full grid grid-cols-1 bg-white grid-rows-6 gap-6 px-16 lg:grid-cols-3 lg:grid-rows-2 pb-10">
+    <div className="h-full w-full grid grid-cols-1 bg-white grid-rows-6 gap-6 px-5 lg:grid-cols-3 lg:grid-rows-2 pb-10">
       <div className="border-t-2">
         <div className="flex-col relative mt-3">
           <div className="flex flex-col xxs:flex-row items-center gap-3 justify-between text-black ">

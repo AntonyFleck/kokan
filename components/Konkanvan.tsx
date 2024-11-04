@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Konkanvan() {
   return (
     <div>
-      <div className="h-full w-full grid grid-cols-1 bg-white grid-rows-6 gap-6 px-16 lg:grid-cols-3 lg:grid-rows-2 pb-10">
+      <div className="h-full w-full grid grid-cols-1 bg-white grid-rows-6 gap-6 px-5 lg:grid-cols-3 lg:grid-rows-2 pb-10">
         <div className="border-t-2">
           <div className="flex-col relative mt-3">
             <div className="relative h-60 w-full xxs:h-58 mt-4 mr-4">
@@ -87,7 +87,7 @@ export default function Konkanvan() {
         </div>
       </div>
 
-      <div className="p-6 bg-white rounded-lg shadow-md max-w-3xl mx-auto my-8">
+      <div className="p-4 bg-white rounded-lg shadow-md max-w-3xl mx-auto my-8">
         <h2 className="text-2xl font-bold text-green-800 mb-4">
           Open Bungalow Plots Project - Lanja, Ratnagiri
         </h2>

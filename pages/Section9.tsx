@@ -8,7 +8,7 @@ export default function Section9() {
     <div>
       <footer className="bg-green-800 text-white">
         <div className="container mx-auto px-4 py-8 md:py-12">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
             <div className="space-y-6">
               <div className="flex items-center space-x-2">
                 <svg
@@ -119,7 +119,7 @@ export default function Section9() {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg  border-b-2 inline-block font-semibold mb-4">
+              <h3 className="text-lg border-b-2 inline-block font-semibold mb-4">
                 Support
               </h3>
               <ul className="space-y-3">
