@@ -56,6 +56,8 @@ const config: Config = {
       },
       fontFamily: {
         jakarta: ["Plus Jakarta Sans", "sans-serif"],
+        cursive: ["Dancing Script", "cursive"],
+        'libre-baskerville': ["Libre Baskerville", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -67,3 +69,6 @@ const config: Config = {
   plugins: [require("tailwindcss-animate")],
 };
 export default config;
+
+        
+

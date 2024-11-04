@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -21,8 +21,8 @@ type Form = {
   email?: string;
   type: string;
   budget: string;
-  about:string;
-  info:string;
+  about: string;
+  info: string;
 };
 
 export default function Section8() {
@@ -129,7 +129,9 @@ export default function Section8() {
               />
             </div>
 
-            <Button onClick={handleSendMessage} className="w-full sm:w-auto bg-green-700 hover:bg-green-800">
+            <Button
+              onClick={handleSendMessage}
+              className="w-full sm:w-auto bg-green-700 hover:bg-green-800">
               Send Message
             </Button>
           </form>
@@ -166,7 +168,7 @@ export default function Section8() {
             </div>
 
             <div className="flex items-start gap-3">
-              <MapPin className="w-5 h-5 mt-1 text-[#27563A]" />
+              <MapPin className="w-9 h-8 mt-1 text-[#27563A]" />
               <div>
                 <p className="font-medium text-black">Office address</p>
                 <p className="text-gray-600">

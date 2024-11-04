@@ -1,3 +1,4 @@
+import Appbar from "@/components/Appbar";
 import Section1 from "@/pages/Section1";
 import Section2 from "@/pages/Section2";
 import Section3 from "@/pages/Section3";
@@ -10,6 +11,9 @@ import React from "react";
 export default function Home() {
   return (
     <div className="w-screen h-full">
+      <div className=" h-max w-full">
+        <Appbar/>
+      </div>
       <div className=" h-[90%] w-full">
         <Section1 />
       </div>

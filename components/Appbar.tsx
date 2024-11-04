@@ -9,22 +9,26 @@ export default function Appbar() {
       <div className="max-w-6xl mx-auto py-2 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row justify-between gap-3 items-center">
           <div className="flex items-center">
-            <p className="text-green-100 text-3xl hover:text-white  transition-colors italic">
+            <p className="text-green-100 font-libre-baskerville text-3xl hover:text-white  transition-colors">
               Konkanbhoomi
             </p>
           </div>
-          <div className="flex-row flex text-xl justify-center items-center space-x-4 mr-6">
-            <button className="text-green-100 hover:text-white  transition-colors">
-              Blog
-            </button>
+          <div className="flex-row flex text-xl justify-center items-center space-x-4">
             <button
               onClick={() => {
                 router.push("/blogs");
               }}
-              className="text-green-100 leading-tight hover:text-white  transition-colors pr-1">
+              className="text-green-100 hover:text-white  transition-colors">
+              Blog
+            </button>
+            <button
+              onClick={() => {
+                router.push("/about");
+              }}
+              className="text-green-100 leading-tight hover:text-white  transition-colors">
               About Us
             </button>
-            <button className="text-green-100 leading-tight hover:text-white  transition-colors pr-1">
+            <button className="text-green-100 leading-tight hover:text-white  transition-colors">
               Contact Us
             </button>
           </div>
