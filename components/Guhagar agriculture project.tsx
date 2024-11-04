@@ -30,7 +30,7 @@ export default function Guhagarproject() {
               </button>
             </div>
           </div>
-          <div className="relative h-48 xxs:h-58 mt-4 mr-4">
+          <div className="relative h-60 xxs:h-58 mt-4 mr-4">
             <Image
               src="/images/bg.jpg"
               alt="Description of the image"
@@ -63,7 +63,7 @@ export default function Guhagarproject() {
               </button>
             </div>
           </div>
-          <div className="relative h-48 xxs:h-58 mt-4 mr-4">
+          <div className="relative h-60 xxs:h-58 mt-4 mr-4">
             <Image
               src="/images/bg.jpg"
               alt="Description of the image"
@@ -96,7 +96,7 @@ export default function Guhagarproject() {
               </button>
             </div>
           </div>
-          <div className="relative h-48 xxs:h-58 mt-4 mr-4">
+          <div className="relative h-60 xxs:h-58 mt-4 mr-4">
             <Image
               src="/images/bg.jpg"
               alt="Description of the image"
@@ -129,7 +129,7 @@ export default function Guhagarproject() {
               </button>
             </div>
           </div>
-          <div className="relative h-48 xxs:h-58 mt-4 mr-4">
+          <div className="relative h-60 xxs:h-58 mt-4 mr-4">
             <Image
               src="/images/bg.jpg"
               alt="Description of the image"
@@ -162,7 +162,7 @@ export default function Guhagarproject() {
               </button>
             </div>
           </div>
-          <div className="relative h-48 xxs:h-58 mt-4 mr-4">
+          <div className="relative h-60 xxs:h-58 mt-4 mr-4">
             <Image
               src="/images/bg.jpg"
               alt="Description of the image"
@@ -195,7 +195,7 @@ export default function Guhagarproject() {
               </button>
             </div>
           </div>
-          <div className="relative h-48 xxs:h-58 mt-4 mr-4">
+          <div className="relative h-60 w-full xxs:h-58 mt-4 mr-4">
             <Image
               src="/images/bg.jpg"
               alt="Description of the image"

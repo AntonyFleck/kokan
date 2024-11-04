@@ -9,7 +9,7 @@ export default function Tarangan() {
       <div className="h-full w-full grid grid-cols-1 bg-white grid-rows-6 gap-6 px-16 lg:grid-cols-3 lg:grid-rows-2 pb-10">
         <div className="border-t-2">
           <div className="flex-col relative mt-3">
-            <div className="relative h-48 xxs:h-58 mt-4 mr-4">
+            <div className="relative h-60 w-full xxs:h-58 mt-4 mr-4">
               <Image
                 src="/images/Tarangan/img1.jpeg"
                 alt="Description of the image"
@@ -22,7 +22,7 @@ export default function Tarangan() {
         </div>
         <div className="border-t-2">
           <div className="flex-col relative mt-3">
-            <div className="relative h-48 xxs:h-58 mt-4 mr-4">
+            <div className="relative h-60 w-full xxs:h-58 mt-4 mr-4">
               <Image
                 src="/images/Tarangan/img4.jpeg"
                 alt="Description of the image"
@@ -35,7 +35,7 @@ export default function Tarangan() {
         </div>
         <div className="border-t-2">
           <div className="flex-col relative mt-3">
-            <div className="relative h-48 xxs:h-58 mt-4 mr-4">
+            <div className="relative h-60 w-full xxs:h-58 mt-4 mr-4">
               <Image
                 src="/images/Tarangan/img7.jpeg"
                 alt="Description of the image"
@@ -48,7 +48,7 @@ export default function Tarangan() {
         </div>
         <div className="border-t-2">
           <div className="flex-col relative mt-3">
-            <div className="relative h-48 xxs:h-58 mt-4 mr-4">
+            <div className="relative h-60 w-full xxs:h-58 mt-4 mr-4">
               <Image
                 src="/images/Tarangan/img3.jpeg"
                 alt="Description of the image"
@@ -61,7 +61,7 @@ export default function Tarangan() {
         </div>
         <div className="border-t-2">
           <div className="flex-col relative mt-3">
-            <div className="relative h-48 xxs:h-58 mt-4 mr-4">
+            <div className="relative h-60 w-full xxs:h-58 mt-4 mr-4">
               <Image
                 src="/images/Tarangan/img5.jpeg"
                 alt="Description of the image"
@@ -74,7 +74,7 @@ export default function Tarangan() {
         </div>
         <div className="border-t-2">
           <div className="flex-col relative mt-3">
-            <div className="relative h-48 xxs:h-58 mt-4 mr-4">
+            <div className="relative h-60 w-full xxs:h-58 mt-4 mr-4">
               <Image
                 src="/images/Tarangan/img6.jpeg"
                 alt="Description of the image"

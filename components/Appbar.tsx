@@ -1,25 +1,28 @@
+"use client";
 import React from "react";
-import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Appbar() {
+  const router = useRouter();
   return (
     <div className="w-full bg-gradient-to-r from-green-900 to-green-700 shadow-md">
       <div className="max-w-6xl mx-auto py-2 px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between gap-3 items-center">
+        <div className="flex flex-col sm:flex-row justify-between gap-3 items-center">
           <div className="flex items-center">
-            <p className="text-green-100 hover:text-white  transition-colors italic">
+            <p className="text-green-100 text-3xl hover:text-white  transition-colors italic">
               Konkanbhoomi
             </p>
           </div>
-          <div className="md:flex-row flex flex-col justify-center items-center space-x-4 mr-6">
-            <button className="text-green-100 hover:text-white hover:border-white transition-colors pl-3">
-              Home
-            </button>
+          <div className="flex-row flex text-xl justify-center items-center space-x-4 mr-6">
             <button className="text-green-100 hover:text-white  transition-colors">
-              Properties
-            </button>
-            <button className="text-green-100 leading-tight hover:text-white  transition-colors pr-1">
               Blog
+            </button>
+            <button
+              onClick={() => {
+                router.push("/blogs");
+              }}
+              className="text-green-100 leading-tight hover:text-white  transition-colors pr-1">
+              About Us
             </button>
             <button className="text-green-100 leading-tight hover:text-white  transition-colors pr-1">
               Contact Us

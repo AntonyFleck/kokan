@@ -55,7 +55,7 @@ export default function Section9() {
                 Contact Us
               </Button>
             </div>
-            <div>
+            {/* <div>
               <h3 className="text-lg border-b-2 inline-block font-semibold mb-4">
                 Navigation
               </h3>
@@ -89,7 +89,7 @@ export default function Section9() {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div>
               <h3 className="text-lg  border-b-2 inline-block font-semibold mb-4">
                 Company

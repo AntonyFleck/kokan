@@ -1,4 +1,6 @@
+'use client'
 import React from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
@@ -13,7 +15,38 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 
+type Form = {
+  name: string;
+  phone: string;
+  email?: string;
+  type: string;
+  budget: string;
+  about:string;
+  info:string;
+};
+
 export default function Section8() {
+  const [message, setMessage] = useState<Form>({
+    name: "",
+    phone: "",
+    email: "",
+    type: "",
+    budget: "",
+    about: "",
+    info: "",
+  });
+  const phoneNumber = "8096189254"; // Replace with the desired WhatsApp number
+
+  const handleSendMessage = () => {
+    if (message) {
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+        `${message}`
+      )}`;
+      window.open(url, "_blank"); // Opens the WhatsApp message in a new tab
+    } else {
+      alert("Please enter a message.");
+    }
+  };
   return (
     <div className="w-full h-[80%] bg-[#E4E5DF] p-4 md:p-8 lg:p-12">
       <div className="max-w-6xl mx-auto grid gap-8 lg:grid-cols-2">
@@ -96,7 +129,7 @@ export default function Section8() {
               />
             </div>
 
-            <Button className="w-full sm:w-auto bg-green-700 hover:bg-green-800">
+            <Button onClick={handleSendMessage} className="w-full sm:w-auto bg-green-700 hover:bg-green-800">
               Send Message
             </Button>
           </form>
