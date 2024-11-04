@@ -6,7 +6,7 @@ export default function Window2() {
     <div className="relative flex h-full mb-20 flex-1">
       <div className="w-[50vw] h-[50vw] md:size-60 lg:w-screen lg:h-full">
         <Image
-          src="/images/img2.jpeg" 
+          src="/images/img3.jpeg" 
           alt="Description of the image" 
           layout="fill"
           objectFit=""

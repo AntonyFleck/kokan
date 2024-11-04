@@ -31,12 +31,12 @@ export default function Heading() {
     }
   };
   return (
-    <div className="overflow-auto">
+    <div>
       <div className="pl-16 ">
         <div className="text-[#08110C] font-jakarta text-[32px] font-bold leading-[40.32px]  text-left mt-10">
           <p>Discover Our Current Projects in Progress</p>
         </div>
-        <div className="text-[#27563A] text-[19px] font-medium leading-[32px] text-left flex mt-3 pb-4 ">
+        <div className="text-[#27563A] text-[19px] font-medium leading-[32px] text-left flex mt-3 pb-4 overflow-auto">
           <div>
             <button
               onClick={() => setActiveComponent("A")}
