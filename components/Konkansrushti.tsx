@@ -60,7 +60,7 @@ export default function Konkansrushti() {
         <div className="border-t-2">
           <div className="flex-col relative mt-3">
             <div className="relative h-60 w-full xxs:h-58 mt-4 mr-4">
-              <Image 
+              <Image
                 src="/images/Konkansrushti/img5.jpeg"
                 alt="Description of the image"
                 layout="fill"
@@ -84,23 +84,82 @@ export default function Konkansrushti() {
           </div>
         </div>
       </div>
-      <div>
-        <p className="text-black">
-          Welcome to Lanja - Ratnagiri's Open Bungalow Plots Project Project
-          Name: Konkansrushti Village: Kherwase Start Date: Since 2011 Total
-          Project Area: 34 Acres Total Plots: 125 Plot Sizes: Starting from 4000
-          sq. ft. Project Connectivity - Lanja S.T. Stand: 07 km - Railway
-          Station (Veravali): 04 km - Mumbai-Goa Highway: 06 km Project Features
-          - Collector Approved Project - Independent 7/12 Document - Separate
-          Measurement Map - Loan Facility: Available for plot + house -
-          Developed Open Spaces (05) and basic amenities - 02 Amenity Spaces -
-          02 Borewells Plot Features - Stone Boundary Wall: (All four sides, 3.5
-          feet high) - Water Supply: Available up to the plot - WBM Internal
-          Roads: 12 meters and 09 meters wide - Rainwater Drainage - Roadside
-          Plantation - Trees within each plot Team Konkanbhumi Developers
-          Contact: 7506205555 / 7517205555 Only 03 plots left at the beautiful
-          hilltop location Price: ₹200 per sq. ft.
+      <div className="p-6 bg-white rounded-lg shadow-md max-w-3xl mx-auto my-8">
+        <h2 className="text-2xl font-bold text-green-800 mb-4">
+          Open Bungalow Plots Project - Lanja, Ratnagiri
+        </h2>
+        <p className="text-gray-700 mb-2">
+          <strong>Project Name:</strong> Konkansrushti
+          <br />
+          <strong>Village:</strong> Kherwase
+          <br />
+          <strong>Start Date:</strong> Since 2011
         </p>
+
+        <ul className="list-disc list-inside text-gray-700 mb-4">
+          <li>
+            <strong>Total Project Area:</strong> 34 Acres
+          </li>
+          <li>
+            <strong>Total Plots:</strong> 125
+          </li>
+          <li>
+            <strong>Plot Sizes:</strong> Starting from 4000 sq. ft.
+          </li>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-green-700 mt-6 mb-2">
+          Project Connectivity
+        </h3>
+        <ul className="list-disc list-inside text-gray-700">
+          <li>Lanja S.T. Stand: 07 km</li>
+          <li>Railway Station (Veravali): 04 km</li>
+          <li>Mumbai-Goa Highway: 06 km</li>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-green-700 mt-6 mb-2">
+          Project Features
+        </h3>
+        <ul className="list-disc list-inside text-gray-700">
+          <li>Collector Approved Project</li>
+          <li>Independent 7/12 Document</li>
+          <li>Separate Measurement Map</li>
+          <li>Loan Facility available for plot + house</li>
+          <li>Developed Open Spaces (05) with basic amenities</li>
+          <li>02 Amenity Spaces</li>
+          <li>02 Borewells</li>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-green-700 mt-6 mb-2">
+          Plot Features
+        </h3>
+        <ul className="list-disc list-inside text-gray-700">
+          <li>Stone Boundary Wall (All four sides, 3.5 feet high)</li>
+          <li>Water Supply: Available up to the plot</li>
+          <li>WBM Internal Roads: 12 meters and 09 meters wide</li>
+          <li>Rainwater Drainage</li>
+          <li>Roadside Plantation</li>
+          <li>Trees within each plot</li>
+        </ul>
+
+        <div className="mt-6 text-gray-700">
+          <h3 className="text-xl font-semibold text-green-700 mb-2">
+            Developer Information
+          </h3>
+          <p>
+            <strong>Developer:</strong> Team Konkanbhumi Developers
+          </p>
+          <p>
+            <strong>Contact:</strong> 7506205555 / 7517205555
+          </p>
+          <p>
+            <strong>Price:</strong> ₹200 per sq. ft.
+          </p>
+          <p>
+            <strong>Note:</strong> Only 03 plots left at the beautiful hilltop
+            location
+          </p>
+        </div>
       </div>
     </div>
   );
