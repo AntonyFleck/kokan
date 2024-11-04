@@ -1,207 +1,25 @@
-"use-client";
 import React from "react";
-import Image from "next/image";
 
 export default function Card2() {
   return (
-    <div className="h-full w-full grid grid-cols-1 bg-white grid-rows-6 gap-6 px-16 lg:grid-cols-3 lg:grid-rows-2 pb-10">
-      <div className="border-t-2">
-        <div className="flex-col relative mt-3">
-          <div className="flex flex-col xxs:flex-row items-center gap-3 justify-between text-black ">
-            <div className="flex">
-              <p className="text-center">
-                4 beds-1&middot;1 bath&middot;1931 sqft&middot;Eco-friendly
-              </p>
-            </div>
-            <div className="flex items-center pr-4 ">
-              <p>2 years ago</p>
-            </div>
-          </div>
-          <div className="flex flex-col xxs:flex-row relative mt-3 gap-4 items-center justify-between">
-            <div>
-              <p className="text-black text-lg font-jakarta">$450,000</p>
-            </div>
-            <div>
-              <button className="text-white text-lg bg-[#27563A] focus:outline-none focus:ring-4  font-semibold relative rounded-3xl  px-4 py-1 text-center ">
-                FOR SALE
-              </button>
-            </div>
-          </div>
-          <div className="relative h-48 xxs:h-58 mt-4 mr-4">
-            <Image
-              src="/images/bg.jpg"
-              alt="Description of the image"
-              layout="fill"
-              className="rounded-[20px] object-cover"
-              draggable={false}
-            />
-          </div>
-        </div>
+    <div className="flex flex-col text-black p-5 gap-y-2">
+      <div className="border-l-4 border-[#27563A] p-2">
+        <p className="text-[#27563A] font-jakarta text-[32px] font-bold ">
+          "गाव हवं असणाऱ्यांना गाव देतो"
+        </p>
       </div>
-      <div className="border-t-2">
-        <div className="flex-col relative mt-3">
-          <div className="flex flex-col xxs:flex-row items-center gap-3 justify-between text-black ">
-            <div className="flex items-center ">
-              <p className="text-center">
-                4 beds-1&middot;1 bath&middot;1931 sqft&middot;Eco-friendly
-              </p>
-            </div>
-            <div className="flex items-center pr-4 ">
-              <p>2 years ago</p>
-            </div>
-          </div>
-          <div className="flex flex-col xxs:flex-row relative mt-3 gap-4 items-center justify-between">
-            <div>
-              <p className="text-black text-lg font-jakarta">$450,000</p>
-            </div>
-            <div>
-              <button className="text-white text-lg bg-[#27563A] focus:outline-none focus:ring-4  font-semibold relative rounded-3xl  px-4 py-1 text-center ">
-                FOR SALE
-              </button>
-            </div>
-          </div>
-          <div className="relative h-48 xxs:h-58 mt-4 mr-4">
-            <Image
-              src="/images/bg.jpg"
-              alt="Description of the image"
-              layout="fill"
-              className="rounded-[20px] object-cover"
-              draggable={false}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="border-t-2">
-        <div className="flex-col relative mt-3">
-          <div className="flex flex-col xxs:flex-row items-center gap-3 justify-between text-black ">
-            <div className="flex items-center ">
-              <p className="text-center">
-                4 beds-1&middot;1 bath&middot;1931 sqft&middot;Eco-friendly
-              </p>
-            </div>
-            <div className="flex items-center pr-4 ">
-              <p>2 years ago</p>
-            </div>
-          </div>
-          <div className="flex flex-col xxs:flex-row relative mt-3 gap-4 items-center justify-between">
-            <div>
-              <p className="text-black text-lg font-jakarta">$450,000</p>
-            </div>
-            <div>
-              <button className="text-white text-lg bg-[#27563A] focus:outline-none focus:ring-4  font-semibold relative rounded-3xl  px-4 py-1 text-center ">
-                FOR SALE
-              </button>
-            </div>
-          </div>
-          <div className="relative h-48 xxs:h-58 mt-4 mr-4">
-            <Image
-              src="/images/bg.jpg"
-              alt="Description of the image"
-              layout="fill"
-              className="rounded-[20px] object-cover"
-              draggable={false}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="border-t-2">
-        <div className="flex-col relative mt-3">
-          <div className="flex flex-col xxs:flex-row items-center gap-3 justify-between text-black ">
-            <div className="flex items-center ">
-              <p className="text-center">
-                4 beds-1&middot;1 bath&middot;1931 sqft&middot;Eco-friendly
-              </p>
-            </div>
-            <div className="flex items-center pr-4 ">
-              <p>2 years ago</p>
-            </div>
-          </div>
-          <div className="flex flex-col xxs:flex-row relative mt-3 gap-4 items-center justify-between">
-            <div>
-              <p className="text-black text-lg font-jakarta">$450,000</p>
-            </div>
-            <div>
-              <button className="text-white text-lg bg-[#27563A] focus:outline-none focus:ring-4  font-semibold relative rounded-3xl  px-4 py-1 text-center ">
-                FOR SALE
-              </button>
-            </div>
-          </div>
-          <div className="relative h-48 xxs:h-58 mt-4 mr-4">
-            <Image
-              src="/images/bg.jpg"
-              alt="Description of the image"
-              layout="fill"
-              className="rounded-[20px] object-cover"
-              draggable={false}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="border-t-2">
-        <div className="flex-col relative mt-3">
-          <div className="flex flex-col xxs:flex-row items-center gap-3 justify-between text-black ">
-            <div className="flex items-center ">
-              <p className="text-center">
-                4 beds-1&middot;1 bath&middot;1931 sqft&middot;Eco-friendly
-              </p>
-            </div>
-            <div className="flex items-center pr-4 ">
-              <p>2 years ago</p>
-            </div>
-          </div>
-          <div className="flex flex-col xxs:flex-row relative mt-3 gap-4 items-center justify-between">
-            <div>
-              <p className="text-black text-lg font-jakarta">$450,000</p>
-            </div>
-            <div>
-              <button className="text-white text-lg bg-[#27563A] focus:outline-none focus:ring-4  font-semibold relative rounded-3xl  px-4 py-1 text-center ">
-                FOR SALE
-              </button>
-            </div>
-          </div>
-          <div className="relative h-48 xxs:h-58 mt-4 mr-4">
-            <Image
-              src="/images/bg.jpg"
-              alt="Description of the image"
-              layout="fill"
-              className="rounded-[20px] object-cover"
-              draggable={false}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="border-t-2">
-        <div className="flex-col relative mt-3">
-          <div className="flex flex-col xxs:flex-row items-center gap-3 justify-between text-black ">
-            <div className="flex items-center ">
-              <p className="text-center">
-                4 beds-1&middot;1 bath&middot;1931 sqft&middot;Eco-friendly
-              </p>
-            </div>
-            <div className="flex items-center pr-4 ">
-              <p>2 years ago</p>
-            </div>
-          </div>
-          <div className="flex flex-col xxs:flex-row relative mt-3 gap-4 items-center justify-between">
-            <div>
-              <p className="text-black text-lg font-jakarta">$450,000</p>
-            </div>
-            <div>
-              <button className="text-white text-lg bg-[#27563A] focus:outline-none focus:ring-4  font-semibold relative rounded-3xl  px-4 py-1 text-center ">
-                FOR SALE
-              </button>
-            </div>
-          </div>
-          <div className="relative h-48 xxs:h-58 mt-4 mr-4">
-            <Image
-              src="/images/bg.jpg"
-              alt="Description of the image"
-              layout="fill"
-              className="rounded-[20px] object-cover"
-              draggable={false}
-            />
-          </div>
-        </div>
+      <div>
+        <p className="text-[#313131] text-[16px] font-medium leading-[32px] text-left">
+          Every plot and home we help you find in Konkan is an invitation to
+          form new bonds, make cherished memories, and build friendships with
+          neighbors who soon become extended family. With each visit, your sense
+          of connection deepens—familiar landscapes take on a personal touch,
+          local institutions feel like your own, and the breathtaking natural
+          surroundings become part of your life. This is more than owning
+          property; it’s about rediscovering your roots, reuniting with culture,
+          and becoming a part of something timeless. Come, find your village
+          with us—where home is more than a place, it’s a community.
+        </p>
       </div>
     </div>
   );

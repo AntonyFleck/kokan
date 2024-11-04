@@ -8,56 +8,46 @@ type FAQItem = {
 
 const faqItems: FAQItem[] = [
   {
-    question:
-      "What makes EcoHaven Realty different from other real estate agencies?",
-    answer:
-      "At EcoHaven Realty, we are committed to promoting sustainability in the real estate industry. We prioritize eco-friendly practices, such as green building techniques and energy-efficient systems, in all of our transactions. We believe that promoting environmental responsibility is not only the right thing to do, but it also benefits our clients by providing long-term cost savings and a healthier living environment.",
+    question: "Since when has Konkanbhoomi Developers been operational?",
+    answer: "Konkanbhoomi Developers has been active since December 10, 2004.",
   },
   {
-    question: "Do you only work with eco-friendly properties?",
+    question: "Who are the directors of Konkanbhoomi Developers?",
     answer:
-      "While we specialize in promoting and selling eco-friendly properties, we work with all types of properties. Our focus is on promoting sustainable practices and educating our clients on how they can make their properties more eco-friendly.",
+      "Mr. Nitin Neelkanth Kadam and Mrs. Sneha Nitin Kadam are the directors of Konkanbhoomi Developers.",
   },
   {
-    question: "Can you help me find an eco-friendly property?",
+    question: "Where is the main office of Konkanbhoomi Developers located?",
     answer:
-      "We have a database of eco-friendly properties and can work with you to find a property that aligns with your sustainability goals. Additionally, we can provide guidance on how to make any property more eco-friendly.",
+      "Kadam Farm, Amrutsrushti Colony, Korle Road, Kelambe Village, Lanja Taluka, Ratnagiri District - 416 701.",
   },
   {
-    question: "What is your process for ensuring a property is eco-friendly?",
+    question: "Is Konkanbhoomi Developers RERA registered?",
     answer:
-      "We work with builders and contractors who specialize in eco-friendly building practices. We also conduct assessments of a property's energy and water usage, as well as its overall sustainability features, to ensure that it aligns with our eco-friendly standards.",
+      "Yes, our RERA registration number is A52800007809 (currently under renewal).",
   },
   {
-    question: "Are eco-friendly properties more expensive?",
-    answer:
-      "Not necessarily. While some eco-friendly features may require an initial investment, such as solar panels or energy-efficient systems, they can ultimately lead to long-term cost savings on utility bills. Additionally, there are often government incentives and tax breaks available for eco-friendly properties and features.",
+    question: "What specific services do you offer?",
+    answer: `We provide NA bungalow open plots with essential amenities, including:
+
+Water supply,
+Electricity,
+Compound walls,
+Gated Community,
+Internal WBM Roads,
+Plantation,
+Proper Management & Maintenance of properties.
+`,
   },
   {
-    question:
-      "What makes EcoHaven Realty different from other real estate agencies?",
+    question: "Do you offer construction services for building homes?",
     answer:
-      "At EcoHaven Realty, we are committed to promoting sustainability in the real estate industry. We prioritize eco-friendly practices, such as green building techniques and energy-efficient systems, in all of our transactions. We believe that promoting environmental responsibility is not only the right thing to do, but it also benefits our clients by providing long-term cost savings and a healthier living environment.",
+      "Yes, we offer custom home construction tailored to individual preferences and requirements.",
   },
   {
-    question: "Do you only work with eco-friendly properties?",
+    question: "Is it mandatory to have the home constructed by you?",
     answer:
-      "While we specialize in promoting and selling eco-friendly properties, we work with all types of properties. Our focus is on promoting sustainable practices and educating our clients on how they can make their properties more eco-friendly.",
-  },
-  {
-    question: "Can you help me find an eco-friendly property?",
-    answer:
-      "We have a database of eco-friendly properties and can work with you to find a property that aligns with your sustainability goals. Additionally, we can provide guidance on how to make any property more eco-friendly.",
-  },
-  {
-    question: "What is your process for ensuring a property is eco-friendly?",
-    answer:
-      "We work with builders and contractors who specialize in eco-friendly building practices. We also conduct assessments of a property's energy and water usage, as well as its overall sustainability features, to ensure that it aligns with our eco-friendly standards.",
-  },
-  {
-    question: "Are eco-friendly properties more expensive?",
-    answer:
-      "Not necessarily. While some eco-friendly features may require an initial investment, such as solar panels or energy-efficient systems, they can ultimately lead to long-term cost savings on utility bills. Additionally, there are often government incentives and tax breaks available for eco-friendly properties and features.",
+      "No, there is no obligation. You may hire another contractor if desired. However, viewing the quality of homes built by our contractors may assist you in making an informed decision.",
   },
 ];
 

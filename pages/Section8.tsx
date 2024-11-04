@@ -40,12 +40,34 @@ export default function Section8() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="email">Email*</Label>
+              <Label htmlFor="email">Email</Label>
               <Input
                 id="email"
                 placeholder="Enter your email"
                 required
                 type="email"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="inquiry">Land Type?*</Label>
+              <Select>
+                <SelectTrigger>
+                  <SelectValue placeholder="Select one" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="viewing">NA bungalow plot</SelectItem>
+                  <SelectItem value="pricing">Agriculture plot</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="phone">Budget*</Label>
+              <Input
+                id="budget"
+                placeholder="Enter your budget"
+                required
+                type="tel"
               />
             </div>
 
@@ -58,9 +80,7 @@ export default function Section8() {
                 <SelectContent>
                   <SelectItem value="viewing">Property Viewing</SelectItem>
                   <SelectItem value="pricing">Pricing Information</SelectItem>
-                  <SelectItem value="availability">
-                    Availability Check
-                  </SelectItem>
+
                   <SelectItem value="other">Other</SelectItem>
                 </SelectContent>
               </Select>
@@ -85,7 +105,7 @@ export default function Section8() {
         <div className="space-y-8 lg:p-6 ">
           <div className="text-black">
             <h2 className="text-2xl font-bold mb-4">
-              Get in touch to schedule a visit to your new house.
+              Get in touch to schedule a visit.
             </h2>
             <p className="">
               Kindly fill this form with your details about your inquiries and
@@ -98,7 +118,7 @@ export default function Section8() {
               <Mail className="w-5 h-5 mt-1 text-[#27563A]" />
               <div>
                 <p className="font-medium text-black">Send an email</p>
-                <p className="text-gray-600">contact@ecohaverealty.com</p>
+                <p className="text-gray-600">enquiry@konkanbhoomi.com</p>
               </div>
             </div>
 
@@ -106,7 +126,9 @@ export default function Section8() {
               <Phone className="w-5 h-5 mt-1 text-[#27563A]" />
               <div>
                 <p className="font-medium text-black">Give us a call</p>
-                <p className="text-gray-600">+234905 121 8127</p>
+                <p className="text-gray-600">
+                  Contact: 7506205555 / 8805004034
+                </p>
               </div>
             </div>
 
@@ -115,7 +137,8 @@ export default function Section8() {
               <div>
                 <p className="font-medium text-black">Office address</p>
                 <p className="text-gray-600">
-                  11, Odo-Olowu, Ijesha edo B/Stop, Surulere
+                  Kadam Farm, Amrutsrushti Colony, Korle Road, Kelambe Village,
+                  Lanja Taluka, Ratnagiri District - 416 701.
                 </p>
               </div>
             </div>
@@ -124,7 +147,7 @@ export default function Section8() {
               <Clock className="w-5 h-5 mt-1 text-[#27563A]" />
               <div>
                 <p className="font-medium text-black">Working hours</p>
-                <p className="text-gray-600">Mon - Sat: 10am - 4pm</p>
+                <p className="text-gray-600">Mon - Sat: 10am - 7pm</p>
               </div>
             </div>
           </div>

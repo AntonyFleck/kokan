@@ -4,19 +4,8 @@ export default function Faqleft() {
   return (
     <div className=" flex flex-col ml-5 gap-y-5">
       <div className="border-l-4 border-[#27563A] p-2">
-        <p className="text-[#27563A] font-semibold">
+        <p className="text-[#27563A] font-jakarta text-[28px]  leading-[30.32px] font-semibold">
           Frequently Asked Questions
-        </p>
-      </div>
-      <div>
-        <p className="text-[#08110C] font-jakarta text-[32px] font-bold leading-[40.32px] text-left">
-          Common questions asked about our eco-friendly homes.
-        </p>
-      </div>
-      <div>
-        <p className="text-[#313131] text-[16px] font-medium leading-[32px] text-left">
-          Here are some important questions that are frequently asked and the
-          answers to the questions.
         </p>
       </div>
       <div>

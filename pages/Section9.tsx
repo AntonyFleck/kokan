@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import Link from "next/link";
 
 export default function Section9() {
@@ -19,13 +19,13 @@ export default function Section9() {
                   <path d="M12 2L1 12h3v9h6v-6h4v6h6v-9h3L12 2z" />
                 </svg>
                 <span className="text-xl  border-b-2 inline-block font-bold">
-                  EcoHaven Realty
+                  Konkanbhoomi Developers
                 </span>
               </div>
 
               <div className="flex space-x-4">
                 <Link
-                  href="#"
+                  href="https://www.facebook.com/konkanbhoomidevelopers"
                   className="hover:text-gray-200 transition-colors">
                   <span className="sr-only">Facebook</span>
                   <Facebook className="h-6 w-6" />
@@ -37,19 +37,18 @@ export default function Section9() {
                   <Linkedin className="h-6 w-6" />
                 </Link>
                 <Link
-                  href="#"
+                  href="https://www.youtube.com/@konkanbhoomidevelopers6550"
                   className="hover:text-gray-200 transition-colors">
                   <span className="sr-only">Twitter</span>
-                  <Twitter className="h-6 w-6" />
+                  <Youtube className="h-6 w-6" />
                 </Link>
                 <Link
-                  href="#"
+                  href="https://www.instagram.com/konkanbhoomi_developers/profilecard/?igsh=OTF1dzQ1eTNxdjFv"
                   className="hover:text-gray-200 transition-colors">
                   <span className="sr-only">Instagram</span>
                   <Instagram className="h-6 w-6" />
                 </Link>
               </div>
-
               <Button
                 variant="outline"
                 className="bg-transparent text-white border-white hover:bg-white hover:text-green-800">
@@ -61,13 +60,6 @@ export default function Section9() {
                 Navigation
               </h3>
               <ul className="space-y-3">
-                <li>
-                  <Link
-                    href="#"
-                    className="hover:text-gray-200 transition-colors">
-                    Company
-                  </Link>
-                </li>
                 <li>
                   <Link
                     href="#"
@@ -138,19 +130,12 @@ export default function Section9() {
                     Contact us
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="hover:text-gray-200 transition-colors">
-                    Login
-                  </Link>
-                </li>
               </ul>
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-white/10">
             <p className="text-sm text-gray-200">
-              Copyright © 2022. All rights reserved
+              Copyright © 2024. All rights reserved
             </p>
           </div>
         </div>

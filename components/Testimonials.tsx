@@ -14,30 +14,36 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Felix Jimoh",
-    rating: 4.9,
+    name: "Santosh Pawaskar",
+    rating: 5,
     quote:
-      "I had a wonderful experience working with EcoHaven Realty to find my new home. They really took the time to understand what was important to me and helped me find a home that was not only beautiful but also eco-friendly and energy-efficient. The team's expertise in sustainable housing options was impressive, and they guided me through every step of the process with patience and professionalism.",
+      "Very supportive and co operative team, Mr. Nitin Kadam extended all the support desired.Trustworthy people and work transparently...",
   },
   {
     id: 2,
-    name: "David T.",
-    rating: 4.5,
-    quote:
-      "EcoHaven Realty is an amazing real estate agency that truly understands the importance of sustainability and eco-friendliness. They helped me find a beautiful home that was not only environmentally conscious but also aligned perfectly with my lifestyle needs. Their commitment to promoting green living spaces is commendable, and I'm grateful for their dedicated service.",
+    name: "Chetan Wadekar",
+    rating: 5,
+    quote: `We already have a plot booked here since 10 years. It was a great experience with Mr. Nitin Kadam and team konkan bhoomi developers with their helpful nature. Me being an Architect observed that they provide basic services such as water supply, electric supply and compound wall in their ongoing and upcoming projects which is a very needful and basic thing if you invest such huge and hard earned money.
+Do visit their office and ongoing projects in Lanja, Ratnagiri for further investments in your life.
+I wish them good luck ahead. `,
   },
   {
     id: 3,
-    name: "Susan Lanre",
-    rating: 4.5,
-    quote:
-      "I recently sold my home with EcoHaven Realty and couldn't be happier with the experience. The team was professional, and really took the time to understand what was important to me. They expertly marketed my property's eco-friendly features, which helped attract the right buyers quickly. Their knowledge of the sustainable real estate market is unparalleled.",
+    name: "Satish Shirvadkar",
+    rating: 5,
+    quote: `5 out of 5 mark to Mr. Nitin Kadam and his team. I'm happy to write this review about Kokanbhoomi Developers. I purchased the plot through Kokanbhoomi Developers in Lanja Om Anant. Mr. Nitin Kadam and Team have given me the best and genuine deal. I am one of the very very happy customer of Kokanbhoomi Developer. Because of them my dream came true. `,
   },
   {
     id: 4,
-    name: "Susan Lanre",
-    rating: 4.5,
-    quote: "I recently sold my home with.",
+    name: "Preeti Gurav",
+    rating: 5,
+    quote: `Very helpfull peoples and good nature ....Mr. Nitin Kadam and there team helped us a lot with no regrets in return ....very clear and transparent paperwork with no difficulties....they are always at there high to help you with a smiling faces ....Kokanbhoomi develepors are doing great job to fulfill dreams and bringing back peoples to there roots...`,
+  },
+  {
+    id: 5,
+    name: "Santosh Bhalerao",
+    rating: 5,
+    quote: `Very good personalized service, they take good care of our plots and especially the plantations.`,
   },
 ];
 
@@ -48,16 +54,16 @@ export default function InfiniteScrollingTestimonials() {
   const [isHovered, setIsHovered] = useState(false);
   const [items, setItems] = useState<ExtendedTestimonial[]>([]);
 
-useEffect(() => {
-  // Initialize with 3 sets of testimonials for smooth scrolling
-  const repeatedTestimonials = Array.from({ length: 3 }, (_, index) =>
-    testimonials.map((testimonial) => ({
-      ...testimonial,
-      uniqueKey: `${testimonial.id}-${index}`, // Create a unique key for rendering
-    }))
-  ).flat();
-  setItems(repeatedTestimonials);
-}, []);
+  useEffect(() => {
+    // Initialize with 3 sets of testimonials for smooth scrolling
+    const repeatedTestimonials = Array.from({ length: 3 }, (_, index) =>
+      testimonials.map((testimonial) => ({
+        ...testimonial,
+        uniqueKey: `${testimonial.id}-${index}`, // Create a unique key for rendering
+      }))
+    ).flat();
+    setItems(repeatedTestimonials);
+  }, []);
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;
@@ -93,35 +99,35 @@ useEffect(() => {
     }
   };
 
- const renderTestimonial = (testimonial: ExtendedTestimonial) => (
-   <Card
-     key={testimonial.uniqueKey} // Use uniqueKey instead of id
-     className="flex-shrink-0 w-[300px] mx-4 my-2 bg-white shadow-lg">
-     <CardContent className="p-6 flex flex-col h-[300px]">
-       <div className="flex justify-center mb-4">
-         {[...Array(5)].map((_, i) => (
-           <Star
-             key={i}
-             className={`w-5 h-5 ${
-               i < Math.floor(testimonial.rating)
-                 ? "text-yellow-400 fill-yellow-400"
-                 : "text-gray-300"
-             }`}
-           />
-         ))}
-         <span className="ml-2 text-sm text-gray-600">
-           {testimonial.rating.toFixed(1)}
-         </span>
-       </div>
-       <div className="flex-grow overflow-y-auto mb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
-         <blockquote className="text-center text-gray-700">
-           "{testimonial.quote}"
-         </blockquote>
-       </div>
-       <p className="text-center font-semibold mt-auto">{testimonial.name}</p>
-     </CardContent>
-   </Card>
- );
+  const renderTestimonial = (testimonial: ExtendedTestimonial) => (
+    <Card
+      key={testimonial.uniqueKey} // Use uniqueKey instead of id
+      className="flex-shrink-0 w-[300px] mx-4 my-2 bg-white shadow-lg">
+      <CardContent className="p-6 flex flex-col h-[300px]">
+        <div className="flex justify-center mb-4">
+          {[...Array(5)].map((_, i) => (
+            <Star
+              key={i}
+              className={`w-5 h-5 ${
+                i < Math.floor(testimonial.rating)
+                  ? "text-yellow-400 fill-yellow-400"
+                  : "text-gray-300"
+              }`}
+            />
+          ))}
+          <span className="ml-2 text-sm text-gray-600">
+            {testimonial.rating.toFixed(1)}
+          </span>
+        </div>
+        <div className="flex-grow overflow-y-auto mb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+          <blockquote className="text-center text-gray-700">
+            "{testimonial.quote}"
+          </blockquote>
+        </div>
+        <p className="text-center font-semibold mt-auto">{testimonial.name}</p>
+      </CardContent>
+    </Card>
+  );
 
   return (
     <div className="py-12 px-4 md:px-6 lg:px-8 bg-white">
