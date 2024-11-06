@@ -9,7 +9,7 @@ export default function Appbar() {
       <div className="max-w-6xl mx-auto py-2 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row justify-between gap-3 items-center">
           <div className="flex items-center">
-            <p className="text-green-100 font-libre-baskerville text-3xl hover:text-white  transition-colors">
+            <p className="text-green-100 font-libre-baskerville text-3xl hover:text-white  transition-colors animate-pulse">
               Konkanbhoomi
             </p>
           </div>

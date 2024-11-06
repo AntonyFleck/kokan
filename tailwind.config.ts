@@ -9,6 +9,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        wiggle: "wiggle 0.5s ease-in-out infinite",
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
+      },
       screens: {
         xxs: "600px", // Custom breakpoint
       },
@@ -57,7 +66,7 @@ const config: Config = {
       fontFamily: {
         jakarta: ["Plus Jakarta Sans", "sans-serif"],
         cursive: ["Dancing Script", "cursive"],
-        'libre-baskerville': ["Libre Baskerville", "serif"],
+        "libre-baskerville": ["Libre Baskerville", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
