@@ -35,7 +35,7 @@ export default function Section8() {
     about: "",
     info: "",
   });
-  const phoneNumber = "8096189254"; // Replace with the desired WhatsApp number
+  const phoneNumber = "7506205555"; // Replace with the desired WhatsApp number
 
   const handleSendMessage = () => {
     if (message) {

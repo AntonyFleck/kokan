@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Appbar() {
   const router = useRouter();
   return (
-    <div className="w-full bg-white shadow-2xl">
+    <div className="w-full bg-white border-b-inherit shadow-2xl">
       <div className="max-w-6xl mx-auto py-2 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row justify-between gap-3 items-center">
           <div className="flex items-center">
@@ -18,7 +18,7 @@ export default function Appbar() {
               height={40}
             />
           </div>
-          <div className="flex-row flex text-xl justify-center items-center space-x-4">
+          <div className="flex-row flex text-2xl justify-center items-center space-x-4">
             <button
               onClick={() => {
                 router.push("/blogs");
