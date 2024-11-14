@@ -59,34 +59,7 @@ export default function Section9() {
                 </Button>
               </div>
             </div>
-            <div>
-              <h3 className="text-lg  border-b-2 inline-block font-semibold mb-4">
-                Company
-              </h3>
-              <ul className="space-y-3">
-                <li>
-                  <Link
-                    href="#"
-                    className="hover:text-gray-200 transition-colors">
-                    About us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="hover:text-gray-200 transition-colors">
-                    Our mission and vision
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="hover:text-gray-200 transition-colors">
-                    Our team
-                  </Link>
-                </li>
-              </ul>
-            </div>
+
           </div>
           <div className="mt-12 pt-8 border-t border-white/10">
             <p className="text-sm text-gray-200">
