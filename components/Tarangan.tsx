@@ -144,14 +144,8 @@ export default function Tarangan() {
 
         <div className="mt-6 text-gray-700">
           <h3 className="text-xl font-semibold text-green-700 mb-2">
-            Developer Information
+          Information
           </h3>
-          <p>
-            <strong>Developer:</strong> Team Konkanbhumi Developers
-          </p>
-          <p>
-            <strong>Contact:</strong> 7506205555 / 7517205555
-          </p>
           <p>
             <strong>Price:</strong> ₹250 per sq. ft.
           </p>

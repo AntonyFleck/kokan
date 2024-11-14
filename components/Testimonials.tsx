@@ -130,7 +130,7 @@ export default function InfiniteScrollingTestimonials() {
   );
 
   return (
-    <div className="py-12 px-4 md:px-6 lg:px-8 bg-white">
+    <div className="py-12 px-4 md:px-6 border-t-2 lg:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-2 text-black">
           What our customers say?

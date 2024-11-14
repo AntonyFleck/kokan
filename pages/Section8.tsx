@@ -1,6 +1,5 @@
 "use client";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
@@ -37,16 +36,24 @@ export default function Section8() {
   });
   const phoneNumber = "7506205555"; // Replace with the desired WhatsApp number
 
+  const handleInputChange = (field: keyof Form, value: string) => {
+    setMessage((prev) => ({
+      ...prev,
+      [field]: value,
+    }));
+  };
+
   const handleSendMessage = () => {
     if (message) {
       const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-        `${message}`
+        `Name: ${message.name}\nPhone: ${message.phone}\nEmail: ${message.email}\nLand Type: ${message.type}\nBudget: ${message.budget}\nInquiry: ${message.about}\nAdditional Info: ${message.info}`
       )}`;
       window.open(url, "_blank"); // Opens the WhatsApp message in a new tab
     } else {
       alert("Please enter a message.");
     }
   };
+
   return (
     <div className="w-full h-[80%] bg-[#E4E5DF] p-4 md:p-8 lg:p-12">
       <div className="max-w-6xl mx-auto grid gap-8 lg:grid-cols-2">
@@ -59,6 +66,7 @@ export default function Section8() {
                   id="fullName"
                   placeholder="Enter your full name"
                   required
+                  onChange={(e) => handleInputChange("name", e.target.value)}
                 />
               </div>
               <div className="space-y-2">
@@ -68,6 +76,7 @@ export default function Section8() {
                   placeholder="Enter your phone number"
                   required
                   type="tel"
+                  onChange={(e) => handleInputChange("phone", e.target.value)}
                 />
               </div>
             </div>
@@ -77,55 +86,66 @@ export default function Section8() {
               <Input
                 id="email"
                 placeholder="Enter your email"
-                required
                 type="email"
+                onChange={(e) => handleInputChange("email", e.target.value)}
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="inquiry">Land Type?*</Label>
-              <Select>
+              <Label htmlFor="type">Land Type?*</Label>
+              <Select
+                onValueChange={(value) => handleInputChange("type", value)}>
                 <SelectTrigger>
                   <SelectValue placeholder="Select one" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="viewing">NA bungalow plot</SelectItem>
-                  <SelectItem value="pricing">Agriculture plot</SelectItem>
+                  <SelectItem value="NA bungalow plot">
+                    NA bungalow plot
+                  </SelectItem>
+                  <SelectItem value="Agriculture plot">
+                    Agriculture plot
+                  </SelectItem>
                 </SelectContent>
               </Select>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="phone">Budget*</Label>
+              <Label htmlFor="budget">Budget*</Label>
               <Input
                 id="budget"
                 placeholder="Enter your budget"
                 required
                 type="tel"
+                onChange={(e) => handleInputChange("budget", e.target.value)}
               />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="inquiry">What is your inquiry about?*</Label>
-              <Select>
+              <Label htmlFor="about">What is your inquiry about?*</Label>
+              <Select
+                onValueChange={(value) => handleInputChange("about", value)}>
                 <SelectTrigger>
                   <SelectValue placeholder="Select one" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="viewing">Property Viewing</SelectItem>
-                  <SelectItem value="pricing">Pricing Information</SelectItem>
-
-                  <SelectItem value="other">Other</SelectItem>
+                  <SelectItem value="Property Viewing">
+                    Property Viewing
+                  </SelectItem>
+                  <SelectItem value="Pricing Information">
+                    Pricing Information
+                  </SelectItem>
+                  <SelectItem value="Other">Other</SelectItem>
                 </SelectContent>
               </Select>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="message">Additional information*</Label>
+              <Label htmlFor="info">Additional information*</Label>
               <Textarea
                 className="min-h-[120px] resize-none"
-                id="message"
+                id="info"
                 placeholder="Your message"
                 required
+                onChange={(e) => handleInputChange("info", e.target.value)}
               />
             </div>
 
@@ -137,14 +157,14 @@ export default function Section8() {
           </form>
         </Card>
 
-        <div className="space-y-8 lg:p-6 ">
+        <div className="space-y-8 lg:p-6">
           <div className="text-black">
             <h2 className="text-2xl font-bold mb-4">
               Get in touch to schedule a visit.
             </h2>
             <p className="">
               Kindly fill this form with your details about your inquiries and
-              we would respond your inquiry shortly.
+              we would respond to your inquiry shortly.
             </p>
           </div>
 

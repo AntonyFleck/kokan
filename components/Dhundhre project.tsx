@@ -134,9 +134,9 @@ export default function Dhundhreproject() {
           <li>Roadside Landscaping and Plantation</li>
         </ul>
 
-        <div className="mt-6 text-gray-700">
+        {/* <div className="mt-6 text-gray-700">
           <h3 className="text-xl font-semibold text-green-700 mb-2">
-            Developer Information
+       Information
           </h3>
           <p>
             <strong>Contact:</strong> 7506205555 / 8805004034
@@ -144,7 +144,7 @@ export default function Dhundhreproject() {
           <p>
             <strong>Developer:</strong> Team Konkanbhumi Developers
           </p>
-        </div>
+        </div> */}
 
         <h3 className="text-xl font-semibold text-green-700 mt-6 mb-2">
           Key Highlights

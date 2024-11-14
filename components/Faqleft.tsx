@@ -1,6 +1,15 @@
+"use client";
 import React from "react";
 
+export const phoneNumber = "7506205555"; // Replace with the desired WhatsApp number
+
+export const handleSendMessage = () => {
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(``)}`;
+    window.open(url, "_blank");
+  };
+
 export default function Faqleft() {
+  
   return (
     <div className=" flex flex-col ml-5 gap-y-5">
       <div className="border-l-4 border-[#27563A] p-2">
@@ -14,7 +23,7 @@ export default function Faqleft() {
         </p>
       </div>
       <div className="flex items-center">
-        <button className="text-white bg-[#27563A] focus:outline-none focus:ring-2  font-semibold relative rounded-[20vw] text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-centre gap-x-1">
+        <button onClick={handleSendMessage} className="text-white bg-[#27563A] focus:outline-none focus:ring-2  font-semibold relative rounded-[20vw] text-lg px-5 py-2.5 text-center me-2 mb-2 flex items-centre gap-x-1">
           <p>ContactUs</p>
           <div className="p-1/2">
             <svg

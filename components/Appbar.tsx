@@ -21,6 +21,13 @@ export default function Appbar() {
           <div className="flex-row flex text-2xl justify-center items-center space-x-4">
             <button
               onClick={() => {
+                router.push("/");
+              }}
+              className="text-[#27563A] leading-tight hover:border-b-2 hover:border-[#27563A] transition-colors">
+              Home
+            </button>
+            <button
+              onClick={() => {
                 router.push("/blogs");
               }}
               className="text-[#27563A] hover:border-b-2 hover:border-[#27563A] transition-colors">
@@ -32,9 +39,6 @@ export default function Appbar() {
               }}
               className="text-[#27563A] leading-tight hover:border-b-2 hover:border-[#27563A] transition-colors">
               About Us
-            </button>
-            <button className="text-[#27563A] leading-tight hover:border-b-2 hover:border-[#27563A] transition-colors">
-              Contact Us
             </button>
           </div>
         </div>

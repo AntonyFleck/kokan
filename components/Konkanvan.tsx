@@ -149,16 +149,10 @@ export default function Konkanvan() {
 
         <div className="mt-6 text-gray-700">
           <h3 className="text-xl font-semibold text-green-700 mb-2">
-            Developer Information
+          Information
           </h3>
           <p>
-            <strong>Developer:</strong> Team Konkanbhumi Developers
-          </p>
-          <p>
-            <strong>Location:</strong> Lanja (Serving for 20 consecutive years)
-          </p>
-          <p>
-            <strong>Contact:</strong> 7506205555 / 7517205555
+            <strong>Location:</strong> Lanja
           </p>
           <p>
             <strong>Price:</strong> Starting from ₹325 per sq. ft.

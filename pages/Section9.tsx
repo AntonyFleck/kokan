@@ -2,13 +2,14 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import Link from "next/link";
+import { phoneNumber,handleSendMessage } from "@/components/Faqleft";
 
 export default function Section9() {
   return (
     <div>
       <footer className="bg-green-800 text-white">
         <div className="container mx-auto px-4 py-8 md:py-12">
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 gap-6">
             <div className="space-y-6">
               <div className="flex items-center space-x-2">
                 <svg
@@ -18,12 +19,12 @@ export default function Section9() {
                   aria-hidden="true">
                   <path d="M12 2L1 12h3v9h6v-6h4v6h6v-9h3L12 2z" />
                 </svg>
-                <span className="text-xl  border-b-2 inline-block font-bold">
+                <span className="text-xl underline inline-block font-bold">
                   Konkanbhoomi Developers
                 </span>
               </div>
 
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 pl-5">
                 <Link
                   href="https://www.facebook.com/konkanbhoomidevelopers"
                   className="hover:text-gray-200 transition-colors">
@@ -49,47 +50,15 @@ export default function Section9() {
                   <Instagram className="h-6 w-6" />
                 </Link>
               </div>
-              <Button
-                variant="outline"
-                className="bg-transparent text-white border-white hover:bg-white hover:text-green-800">
-                Contact Us
-              </Button>
+              <div className=" pl-5">
+                <Button
+                 onClick={handleSendMessage}
+                  variant="outline"
+                  className="bg-transparent text-white border-white hover:bg-white hover:text-green-800">
+                  Contact Us
+                </Button>
+              </div>
             </div>
-            {/* <div>
-              <h3 className="text-lg border-b-2 inline-block font-semibold mb-4">
-                Navigation
-              </h3>
-              <ul className="space-y-3">
-                <li>
-                  <Link
-                    href="#"
-                    className="hover:text-gray-200 transition-colors">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="hover:text-gray-200 transition-colors">
-                    Contact Us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="hover:text-gray-200 transition-colors">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="hover:text-gray-200 transition-colors">
-                    Properties
-                  </Link>
-                </li>
-              </ul>
-            </div> */}
             <div>
               <h3 className="text-lg  border-b-2 inline-block font-semibold mb-4">
                 Company
@@ -114,20 +83,6 @@ export default function Section9() {
                     href="#"
                     className="hover:text-gray-200 transition-colors">
                     Our team
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg border-b-2 inline-block font-semibold mb-4">
-                Support
-              </h3>
-              <ul className="space-y-3">
-                <li>
-                  <Link
-                    href="#"
-                    className="hover:text-gray-200 transition-colors">
-                    Contact us
                   </Link>
                 </li>
               </ul>

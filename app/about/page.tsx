@@ -1,7 +1,11 @@
-import React from 'react'
+import Appbar from "@/components/Appbar";
+import React from "react";
 
 export default function Home() {
   return (
-    <div>about us</div>
-  )
+    <div>
+      <Appbar />
+      about us
+    </div>
+  );
 }
