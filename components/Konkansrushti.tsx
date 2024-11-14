@@ -144,10 +144,10 @@ export default function Konkansrushti() {
 
         <div className="mt-6 text-gray-700">
           <h3 className="text-xl font-semibold text-green-700 mb-2">
-       Information
+            Information
           </h3>
           <p>
-            <strong>Price:</strong> ₹200 per sq. ft.
+            <strong>Price:</strong> ₹350 per sq. ft.(Hilltop Plots Price: ₹200 per sq. ft.)
           </p>
           <p>
             <strong>Note:</strong> Only 03 plots left at the beautiful hilltop
