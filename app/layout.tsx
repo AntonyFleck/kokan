@@ -14,8 +14,10 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Konkanbhoomi",
-  description: "selling residensial plots in konkan",
+  title:
+    "Konkanbhoomi selling residensial plots in konkan,bungalow plots in konkan,residensial plots in konkan,residensial plots in kokan,NA plots in kokan,kokan,kokanbhoomi,konkanbhoomi,kokanbhumi,konkanbhumi,NA plots in konkan",
+  description:
+    "selling residensial plots in konkan,Konkanbhoomi selling residensial plots in konkan,bungalow plots in konkan,residensial plots in konkan,residensial plots in kokan,NA plots in kokan,kokan,kokanbhoomi,konkanbhoomi,kokanbhumi,konkanbhumi,NA plots in konkan",
   keywords: [
     "kokan",
     "kokanbhoomi",
