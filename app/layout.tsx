@@ -14,8 +14,21 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "KokanBhoomi",
-  description: "",
+  title: "Konkanbhoomi",
+  description: "selling residensial plots in konkan",
+  keywords: [
+    "kokan",
+    "kokanbhoomi",
+    "konkanbhoomi",
+    "kokanbhumi",
+    "konkanbhumi",
+    "NA plots in konkan",
+    "NA plots in kokan",
+    "residensial plots in konkan",
+    "residensial plots in kokan",
+    "bungalow plots in konkan",
+    "residensial plots in kokan",
+  ].join(", "),
 };
 
 export default function RootLayout({
@@ -25,9 +38,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="keywords"
+          content={[
+            "kokan",
+            "kokanbhoomi",
+            "konkanbhoomi",
+            "kokanbhumi",
+            "konkanbhumi",
+            "NA plots in konkan",
+            "NA plots in kokan",
+            "residensial plots in konkan",
+            "residensial plots in kokan",
+            "bungalow plots in konkan",
+            "residensial plots in kokan",
+          ].join(", ")}
+        />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
