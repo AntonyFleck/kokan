@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -14,12 +15,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Konkanbhoomi selling residensial plots in konkan,bungalow plots in konkan,residensial plots in konkan,residensial plots in kokan,NA plots in kokan,kokan,kokanbhoomi,konkanbhoomi,kokanbhumi,konkanbhumi,NA plots in konkan",
-  description:
-    "selling residensial plots in konkan,Konkanbhoomi selling residensial plots in konkan,bungalow plots in konkan,residensial plots in konkan,residensial plots in kokan,NA plots in kokan,kokan,kokanbhoomi,konkanbhoomi,kokanbhumi,konkanbhumi,NA plots in konkan",
+  title: "Konkanbhoomi",
+  description: "Selling residensial plots in kokan",
   keywords: [
-    "kokan",
     "kokanbhoomi",
     "konkanbhoomi",
     "kokanbhumi",
@@ -41,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta
+        {/* <meta
           name="keywords"
           content={[
             "kokan",
@@ -56,11 +54,12 @@ export default function RootLayout({
             "bungalow plots in konkan",
             "residensial plots in kokan",
           ].join(", ")}
-        />
+        /> */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
