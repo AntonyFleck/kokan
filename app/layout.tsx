@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* <meta
+        <meta
           name="keywords"
           content={[
             "kokan",
@@ -54,7 +54,7 @@ export default function RootLayout({
             "bungalow plots in konkan",
             "residensial plots in kokan",
           ].join(", ")}
-        /> */}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
