@@ -38,11 +38,38 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* //////////// */}
+        <meta
+          property="og:image"
+          content="https://konkanbhoomi.com/favicon.ico"
+        />
+        <meta property="og:site_name" content="Your Website Name" />
+
+        {/* Schema.org JSON-LD structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              name: "Konkanbhoomi Developers",
+              url: "https://konkanbhoomi.com/",
+              logo: "https://konkanbhoomi.com/favicon.ico",
+            }),
+          }}
+        />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* Viewport meta tag for responsiveness */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="google-site-verification"
           content="1ExsylMG8UQC2EZT1lLbZiylwCt0p5w1TE4Y9D1UaHg"
         />
         <link rel="icon" href="/favicon.ico" />
+        {/* /////////////// */}
         <meta
           name="keywords"
           content={[
