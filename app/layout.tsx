@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Konkanbhoomi",
-  description: "Selling residensial plots in kokan",
+  description: "Selling residential plots in kokan",
   keywords: [
     "kokanbhoomi",
     "konkanbhoomi",
@@ -24,10 +24,9 @@ export const metadata: Metadata = {
     "konkanbhumi",
     "NA plots in konkan",
     "NA plots in kokan",
-    "residensial plots in konkan",
-    "residensial plots in kokan",
+    "residential plots in konkan",
+    "residential plots in kokan",
     "bungalow plots in konkan",
-    "residensial plots in kokan",
   ].join(", "),
 };
 
