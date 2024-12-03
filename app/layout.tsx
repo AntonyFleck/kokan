@@ -31,7 +31,6 @@ const geistMono = localFont({
 // };
 
 export const metadata: Metadata = {
-  // 1. General Metadata
   title: "Konkanbhoomi Developers",
   description: "Selling residential plots in kokan",
 
@@ -104,14 +103,7 @@ export const metadata: Metadata = {
   //manifest: "/manifest.json",
   icons: {
     icon: [{ url: "public/favicon.ico" }],
-    apple: [{ url: "/apple-touch-icon.png" }],
-    other: [
-      {
-        rel: "mask-icon",
-        url: "/safari-pinned-tab.svg",
-        color: "#5bbad5",
-      },
-    ],
+    apple: [{ url: "public/favicon.ico" }],
   },
 };
 
