@@ -38,6 +38,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta
+          name="google-site-verification"
+          content="1ExsylMG8UQC2EZT1lLbZiylwCt0p5w1TE4Y9D1UaHg"
+        />
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="keywords"
