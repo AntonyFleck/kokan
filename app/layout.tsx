@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     siteName: "konkanbhoomi",
     images: [
       {
-        url: "public/favicon.ico", // Recommended size: 1200x630 pixels
+        url: "/favicon.ico", // Recommended size: 1200x630 pixels
         width: 1200,
         height: 630,
         alt: "Your Application Open Graph Image",
@@ -102,8 +102,8 @@ export const metadata: Metadata = {
   // 8. Manifest and Icons
   //manifest: "/manifest.json",
   icons: {
-    icon: [{ url: "public/favicon.ico" }],
-    apple: [{ url: "public/favicon.ico" }],
+    icon: [{ url: "/favicon.ico" }],
+    apple: [{ url: "/favicon.ico" }],
   },
 };
 
@@ -116,33 +116,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* //////////// */}
-
-        {/* Viewport meta tag for responsiveness */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="google-site-verification"
-          content="1ExsylMG8UQC2EZT1lLbZiylwCt0p5w1TE4Y9D1UaHg"
-        />
-        <link rel="icon" href="/favicon.ico" />
-        {/* /////////////// */}
-        <meta
-          name="keywords"
-          content={[
-            "kokan",
-            "kokanbhoomi",
-            "konkanbhoomi",
-            "kokanbhumi",
-            "konkanbhumi",
-            "NA plots in konkan",
-            "NA plots in kokan",
-            "residensial plots in konkan",
-            "residensial plots in kokan",
-            "bungalow plots in konkan",
-            "residensial plots in kokan",
-          ].join(", ")}
-        />
+      <head>       
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
