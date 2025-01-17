@@ -107,8 +107,6 @@ export const metadata: Metadata = {
   },
 };
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -116,7 +114,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>       
+      <head>
+        {/* Google Tag */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-G99HFETPKF"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-G99HFETPKF');
+            `,
+          }}></script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
