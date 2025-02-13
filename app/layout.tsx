@@ -114,11 +114,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>{/* Google Tag */}</head>
+      <head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-83E0HH269X"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-83E0HH269X');`,
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {/* Google Tag Script */}
-        <script
+        {/* <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-G99HFETPKF"
         />
@@ -132,7 +144,7 @@ export default function RootLayout({
               gtag('config', 'G-G99HFETPKF');
             `,
           }}
-        />
+        /> */}
 
         {children}
         <Analytics />
