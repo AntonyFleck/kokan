@@ -4,7 +4,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Script from "next/script";
 
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -117,7 +116,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
+        {/* <Script
           id="gtm-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -134,18 +133,19 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-WGTCN3MK');
           `,
           }}
-        />
-        {/* <script
+        /> */}
+
+        <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-83E0HH269X"></script>
+          src="https://www.googletagmanager.com/gtag/js?id=AW-11364690872"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-                    gtag('config', 'G-83E0HH269X');`,
+                    gtag('config', 'AW-11364690872');`,
           }}
-        /> */}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
